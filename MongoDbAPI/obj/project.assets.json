@@ -964,19 +964,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\r_mon\\.nuget\\packages\\": {}
+    "C:\\Users\\maxga\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\r_mon\\OneDrive\\Escritorio\\Proyecto 2 Bases de Datos Mongo\\MongoDbAPI\\MongoDbAPI.csproj",
+      "projectUniqueName": "C:\\Users\\maxga\\OneDrive\\Documentos\\Cursos CE\\Bases de Datos S1.2023\\Proyecto2\\NutritecAPIMongo\\MongoDbAPI\\MongoDbAPI.csproj",
       "projectName": "MongoDbAPI",
-      "projectPath": "C:\\Users\\r_mon\\OneDrive\\Escritorio\\Proyecto 2 Bases de Datos Mongo\\MongoDbAPI\\MongoDbAPI.csproj",
-      "packagesPath": "C:\\Users\\r_mon\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\r_mon\\OneDrive\\Escritorio\\Proyecto 2 Bases de Datos Mongo\\MongoDbAPI\\obj\\",
+      "projectPath": "C:\\Users\\maxga\\OneDrive\\Documentos\\Cursos CE\\Bases de Datos S1.2023\\Proyecto2\\NutritecAPIMongo\\MongoDbAPI\\MongoDbAPI.csproj",
+      "packagesPath": "C:\\Users\\maxga\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\maxga\\OneDrive\\Documentos\\Cursos CE\\Bases de Datos S1.2023\\Proyecto2\\NutritecAPIMongo\\MongoDbAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\r_mon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\maxga\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -984,7 +984,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -1031,7 +1030,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

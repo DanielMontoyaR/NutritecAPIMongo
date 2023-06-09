@@ -9,9 +9,10 @@ using MongoDbAPI.Repositories;
 
 namespace MongoDbAPI.Controllers
 {
-    [Route("api/[controller]")]
-    [ApiController]
     
+    [ApiController]
+    [Route("api/")]
+
     public class MongoFeedbackController : Controller
     {
         private IFeedback db = new FeedbackCollection();
