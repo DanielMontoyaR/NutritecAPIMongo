@@ -24,10 +24,10 @@ namespace MongoDbAPI.Controllers
         }
 
         [HttpPost("feedback_details")]
-        public async Task<IActionResult> GetFeedbackDetails(string id)
+        public async Task<IActionResult> GetFeedbackDetails(ClientID client_id)
         {
 
-            return Ok(await db.GetFeedbackById(id));
+            return Ok(await db.GetFeedbackById(client_id.Client_Id));
         }
 
 

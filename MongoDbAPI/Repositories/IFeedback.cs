@@ -7,6 +7,6 @@ namespace MongoDbAPI.Repositories
         Task InsertFeedback(MongoFeedback feedback);
         Task GetFeedback(MongoFeedback feedback);
         Task<List<MongoFeedback>> GetAllFeedbacks();
-        Task<MongoFeedback> GetFeedbackById(string client_id);
+        Task<List<MongoFeedback>> GetFeedbackById(string client_id);
     }
 }

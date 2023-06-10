@@ -24,14 +24,14 @@ namespace MongoDbAPI.Repositories
             throw new NotImplementedException();
         }
 
-        public async Task<MongoFeedback> GetFeedbackById(string client_id)
+        public async Task<List<MongoFeedback>> GetFeedbackById(string client_id)
         {
             /*return await Collection.FindAsync(
                 new BsonDocument { { "client_id", new ObjectId(client_id) } }).Result.
                 FirstAsync();*/
             FilterDefinition<MongoFeedback> email_filter = Builders<MongoFeedback>.Filter.Eq("client_id", client_id);
 
-            return await Collection.FindAsync(new BsonDocument { { "client_id", client_id } }).Result.FirstAsync();
+            return await Collection.Find(new BsonDocument { { "client_id", client_id } }).ToListAsync();
 
         }
 

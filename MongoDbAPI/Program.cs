@@ -1,6 +1,19 @@
 using MongoDB.Driver;
+using MongoDbAPI.Models;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(
+    builder =>
+    {
+        builder.AllowAnyMethod()
+               .AllowAnyHeader()
+               .SetIsOriginAllowed(_ => true)
+               .AllowCredentials();
+    });
+});
 
 var connectionString = "mongodb+srv://Kendall2300:Chocolate@nutritecp2.0mapdar.mongodb.net/?retryWrites=true&w=majority";
 var settings = MongoClientSettings.FromConnectionString(connectionString);
@@ -16,12 +29,19 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
+app.UseCors();
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseCors(x => x
+    .AllowAnyOrigin()
+    .AllowAnyMethod()
+    .AllowAnyHeader());
 
 app.UseHttpsRedirection();
 
